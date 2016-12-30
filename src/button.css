@@ -49,16 +49,20 @@
     }
 
     @when plain {
+      &{
+        padding: var(--button-padding-horizontal) var(--button-padding-vertical);
+      }
+    
       &:hover,
       &:focus {
-        background: #fff;
-        border-color: var(--color-primary);
+        background: transparent;
+        border-color: transparent;
         color: var(--color-primary);
       }
       
       &:active {
-        background: #fff;
-        border-color: shade(var(--color-primary), var(--button-active-shade-percent));
+        background: transparent;
+        border-color: transparent;
         color: shade(var(--color-primary), var(--button-active-shade-percent));
         outline: none;
       }
@@ -139,14 +143,17 @@
       border: none;
       color: var(--color-primary);
       background: transparent;
-      padding-left: 0;
-      padding-right: 0;
+     
 
       &:hover,
       &:focus {
+         background: transparent;
+         border: none;
         color: tint(var(--color-primary), var(--button-hover-tint-percent));
       }
       &:active {
+         background: transparent;
+         border: none;
         color: shade(var(--color-primary), var(--button-active-shade-percent));
       }
     }
