@@ -18,9 +18,9 @@
   --color-info: #50bfff;
   
   
-  --color-main: #2e90fe;
-  --color-main-light: #5da9ff;
-  --color-main-lighter: rgba(var(--color-main), 0.12);
+  --color-main: #324057;
+  --color-main-light: shade(var(--color-main),10%);
+  --color-main-lighter: shade(var(--color-main),20%);
   
   
   --color-white: #fff;
@@ -335,9 +335,9 @@
   --button-mini-padding-vertical: 4px;
   --button-mini-padding-horizontal: 4px;
 
-  --button-default-color: #1F2D3D;
-  --button-default-fill: var(--color-white);
-  --button-default-border: #c4c4c4;
+  --button-default-color: var(--color-white);
+  --button-default-fill: var(--color-main);
+  --button-default-border: var(--color-main);
 
   --button-ghost-color: #666;
   --button-ghost-fill: transparent;

@@ -10,6 +10,7 @@
     cursor: pointer;
     background: var(--button-default-fill);
     border: var(--border-base);
+    border-color: var(--button-default-border);
     color: var(--button-default-color);
     -webkit-appearance: none;
     text-align: center;
@@ -25,13 +26,15 @@
 
     &:hover,
     &:focus {
-      color: var(--color-primary);
-      border-color: @color;
+      color: var(--button-default-color);
+      border-color: tint(var(--button-default-border), var(--button-hover-tint-percent));
+      background: tint(var(--button-default-fill), var(--button-hover-tint-percent)); 
     }
     
     &:active {
-      color: shade(var(--color-primary), var(--button-active-shade-percent));
-      border-color: @color;
+      color: shade(var(--button-default-color), var(--button-active-shade-percent));
+      background: shade(var(--button-default-fill), var(--button-active-shade-percent)); 
+      border-color: shade(var(--button-default-border), var(--button-active-shade-percent));
       outline: none;
     }
 
