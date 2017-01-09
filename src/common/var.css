@@ -18,9 +18,9 @@
   --color-info: #50bfff;
   
   
-  --color-main: #324057;
-  --color-main-light: tint(var(--color-main),15%);
-  --color-main-lighter: tint(var(--color-main),30%);
+  --color-main: #2e90fe;
+  --color-main-light: #5da9ff;
+  --color-main-lighter: rgba(var(--color-main), 0.12);
   
   
   --color-white: #fff;
@@ -36,8 +36,8 @@
   -------------------------- */
   --border-width-base: 1px;
   --border-style-base: solid;
-  --border-color-base: var(--color-main);
-  --border-color-hover: var(--color-main-lighter);
+  --border-color-base: var(--color-grey);
+  --border-color-hover: #8492a6;
   --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
   --border-radius-base: 4px;
   --border-radius-small: 2px;
@@ -56,12 +56,12 @@
   /* Font
   -------------------------- */
   --font-size-base: 14px;
-  --font-color-base: #F9FAFC;
+  --font-color-base: #1f2d3d;
   --font-color-disabled-base: #bbb;
 
   /* Size
   -------------------------- */
-  --size-base: var(--font-size-base);
+  --size-base: 14px;
 
   /* z-index
   -------------------------- */
@@ -81,8 +81,8 @@
 
   /* Checkbox
   -------------------------- */
-  --checkbox-font-size: var(--font-size-base);
-  --checkbox-color: var(--font-color-base);
+  --checkbox-font-size: 14px;
+  --checkbox-color: #1f2d3d;
   --checkbox-input-height: 18px;
   --checkbox-input-width: 18px;
   --checkbox-input-border-radius: var(--border-radius-base);
@@ -108,8 +108,8 @@
 
   /* Radio
   -------------------------- */
-  --radio-font-size: var(--font-size-base);
-  --radio-color: var(--font-color-base);
+  --radio-font-size: 14px;
+  --radio-color: #1f2d3d;
   --radio-input-height: 18px;
   --radio-input-width: 18px;
   --radio-input-border-radius: var(--border-radius-circle);
@@ -124,7 +124,7 @@
 
   --radio-disabled-checked-input-fill: var(--disabled-border-base);
   --radio-disabled-checked-input-border-color: var(--disabled-border-base);
-  --radio-disabled-checked-icon-color: var(--color-main);
+  --radio-disabled-checked-icon-color: var(--color-white);
 
   --radio-checked-input-border-color: var(--color-primary);
   --radio-checked-input-fill: var(--color-white);
@@ -192,7 +192,7 @@
   --msgbox-width: 420px;
   --msgbox-border-radius: 3px;
   --msgbox-font-size: 16px;
-  --msgbox-content-font-size: var(--font-size-base);
+  --msgbox-content-font-size: 14px;
   --msgbox-content-color: var(--link-color);
   --msgbox-error-font-size: 12px;
 
@@ -245,16 +245,16 @@
   --input-border-color: var(--border-color-base);
   --input-border-radius: var(--border-radius-base);
   --input-border-color-hover: var(--border-color-hover);
-  --input-fill: var(--color-main-light);
+  --input-fill: var(--color-white);
   --input-fill-disabled: var(--disabled-fill-base);
   --input-color-disabled: var(--font-color-disabled-base);
   --input-icon-color: var(--color-grey);
   --input-placeholder-color: #99a9bf;
-  --input-max-width: 3var(--font-size-base);
+  --input-max-width: 314px;
 
   --input-hover-border: var(--border-color-hover);
 
-  --input-focus-border: var(--border-color-hover);
+  --input-focus-border: var(--color-primary);
   --input-focus-fill: var(--color-white);
 
   --input-disabled-fill: var(--disabled-fill-base);
@@ -317,7 +317,7 @@
 
   /* Button
   -------------------------- */
-  --button-font-size: var(--font-size-base);
+  --button-font-size: 14px;
   --button-border-radius: var(--border-radius-base);
   --button-paddding: 5px 20px;
   --button-padding-vertical: 10px;
@@ -335,9 +335,9 @@
   --button-mini-padding-vertical: 4px;
   --button-mini-padding-horizontal: 4px;
 
-  --button-default-color: var(--color-white);
-  --button-default-fill: var(--color-main);
-  --button-default-border: var(--color-main);
+  --button-default-color: #1F2D3D;
+  --button-default-fill: var(--color-white);
+  --button-default-border: #c4c4c4;
 
   --button-ghost-color: #666;
   --button-ghost-fill: transparent;
@@ -399,7 +399,7 @@
   --dialog-close-color: var(--color-grey);
   --dialog-close-hover-color: var(--color-primary);
   --dialog-title-font-size: 16px;
-  --dialog-font-size: var(--font-size-base);
+  --dialog-font-size: 14px;
 
   /* Table
  -------------------------- */
